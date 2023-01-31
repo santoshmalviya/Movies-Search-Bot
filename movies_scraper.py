@@ -5,10 +5,10 @@ from bs4 import BeautifulSoup
 
 
 url_list = {}
-api_key = "/Api06518cd86cc4e0588b760981b7ef3c4cf230f6b4"
+api_key     =    "06518cd86cc4e0588b760981b7ef3c4cf230f6b4"
 
 
-def search_movies(query):
+def  search_movies ( क्वेरी ):
     movies_list = []
     movies_details = {}
     website = BeautifulSoup(requests.get(f"https://185.53.88.104/?s={query.replace(' ', '+')}").text, "html.parser")
@@ -34,7 +34,7 @@ def get_movie(query):
         links = movie_page_link.find_all("a", {'rel': 'noopener', 'data-wpel-link': 'internal'})
         final_links = {}
         for i in links:
-            url = f"https://shortnerfly.com/api?api={api_key}&url={i['href']}"
+            url = f https://mdiskshortner.link/member/dashboard link/member/dashboard api?api={api_key}&url={i['href']}"
             response = requests.get(url)
             link = response.json()
             final_links[f"{i.text}"] = link['shortenedUrl']
