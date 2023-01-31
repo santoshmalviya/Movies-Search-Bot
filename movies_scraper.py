@@ -4,8 +4,8 @@ import requests
 from bs4 import BeautifulSoup
 
 
-url_list = {http://MdiskShortner.link}
-api_key = "Your Api06518cd86cc4e0588b760981b7ef3c4cf230f6b4 Key"
+url_list = {}
+api_key = "Your Api06518cd86cc4e0588b760981b7ef3c4cf230f6b4"
 
 
 def search_movies(query):
